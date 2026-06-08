@@ -33,6 +33,12 @@ A Codex skill that converts PDFs, slides, documents, notebooks, and other source
 
 Skill 会自行识别 Obsidian Vault、参考已有笔记风格，并在不破坏原有内容和 Graph View 设置的前提下创建或扩充对应知识域。
 
+## 效果展示
+
+下面是使用本 Skill 整理 Graph Learning 与 Agentic RAG 课程资料后，在 Obsidian Graph View 中形成的知识图谱。详细讲义、概念卡、标签、原始材料和 Canvas 学习路线通过双链连接成可浏览的知识网络。
+
+![Obsidian Knowledge Ingest 知识图谱效果图](assets/obsidian-knowledge-graph-demo.png)
+
 ## Features
 
 - Detects the target Obsidian vault and follows its existing conventions
