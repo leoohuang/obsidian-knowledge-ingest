@@ -2,11 +2,36 @@
 
 A Codex skill that converts PDFs, slides, documents, notebooks, and other source files into a structured Obsidian knowledge domain.
 
-它不是把材料压缩成术语表，而是生成一套可以连续学习的三层知识结构：
+## 中文简介
+
+**Obsidian Knowledge Ingest** 是一个面向 Codex 的知识整理 Skill。你只需要提供 PDF、PPT、Word、Markdown、Notebook 等学习或工作资料，并指定一个 Obsidian 文件夹，它就会自动完成内容提取、知识重组、笔记撰写、双链连接、原始附件归档以及知识图谱构建。
+
+它适合整理课程讲义、技术文档、研究报告、实验 Notebook 和企业内部材料。与普通的“PDF 总结”不同，这个 Skill 不会把几十页内容压缩成几条术语解释，而是尽量保留原材料的教学顺序、推理过程、公式、代码、案例、实验结果和关键英文表述，将其改写成可以连续学习和长期维护的 Obsidian 知识库。
+
+生成的知识域采用三层结构：
 
 1. **Map layer**：知识地图、学习路线与 Canvas 入口
 2. **Detailed lecture layer**：教材式中文讲义，保留关键英文术语、公式、示例和推导
 3. **Concept layer**：适合双链、检索和 Graph View 的原子概念卡
+
+处理完成后，你会得到：
+
+- 按推荐顺序组织的详细中文讲义
+- 保留专业英文术语、模型名称、API、公式与代码的双语笔记
+- 可独立检索和复习的概念卡
+- 连接前置知识、相关方法、对比模型和应用场景的 `[[Wikilinks]]`
+- 可视化展示学习路径的 Obsidian Canvas
+- 归档在 `attachments/` 中的原始资料
+- 自动检查失效链接、缺失附件、Canvas 引用、讲义深度和潜在敏感信息的验证工具
+
+典型使用方式非常简单：
+
+```text
+把这些课程 slides 整理到我的 Obsidian/NLP 文件夹。
+保留关键英文术语，内容尽可能详细，并构建知识图谱。
+```
+
+Skill 会自行识别 Obsidian Vault、参考已有笔记风格，并在不破坏原有内容和 Graph View 设置的前提下创建或扩充对应知识域。
 
 ## Features
 
