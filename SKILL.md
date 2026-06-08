@@ -1,6 +1,6 @@
 ---
 name: obsidian-knowledge-ingest
-description: Convert source files into a structured Obsidian knowledge domain with Chinese teaching notes, preserved key English terminology and excerpts, Wikilinks, attachments, a Canvas knowledge map, and Graph View configuration. Use when the user provides one or more PDF, DOCX, PPTX, Markdown, text, notebook, or similar study/work files and names an Obsidian vault or destination folder, asking to organize, convert, import, summarize, or build a knowledge graph in Obsidian.
+description: Convert source files into a structured Obsidian knowledge domain with teaching notes in the user's chosen language, preserved original technical terminology and excerpts, Wikilinks, attachments, a Canvas knowledge map, and Graph View configuration. Use when the user provides one or more PDF, DOCX, PPTX, Markdown, text, notebook, or similar study/work files and names an Obsidian vault or destination folder, asking to organize, convert, import, summarize, or build a knowledge graph in Obsidian.
 ---
 
 # Obsidian Knowledge Ingest
@@ -66,18 +66,18 @@ For course slides or textbooks, prefer 4-10 detailed lecture chapters plus conce
 
 Connect new notes to relevant existing vault notes. Avoid creating duplicate concepts when a strong existing note can be linked or safely enriched. Do not overwrite or substantially rewrite an existing note unless the user requested it.
 
-### 4. Write detailed bilingual teaching chapters
+### 4. Write detailed teaching chapters in the requested language
 
-Write primarily in Chinese unless the user or vault style indicates otherwise.
+Use the language explicitly requested by the user. If the user does not specify one, follow the dominant language and writing style of the destination vault; if that is unclear, use the source's primary language.
 
-Preserve English where it improves precision:
+Preserve terminology in its original language where it improves precision:
 
-- English technical term on first mention: `中文（English Term, acronym）`
+- technical term on first mention: translated explanation plus `Original Term, acronym` where useful
 - exact model, framework, API, class, function, tool, command, and keyword names
 - formulas and code/query syntax
-- short, high-value original wording under `Key English`, `Core definition`, or a callout
+- short, high-value original wording under `Key terminology`, `Original wording`, `Core definition`, or a callout
 
-Explain the English in Chinese. Do not translate identifiers or established keywords. Do not paste long copyrighted passages; keep direct excerpts short and use paraphrase for the rest.
+Explain preserved original-language terminology in the selected output language. Do not translate identifiers or established keywords. Do not paste long copyrighted passages; keep direct excerpts short and use paraphrase for the rest.
 
 Every detailed lecture chapter should normally include:
 
@@ -90,7 +90,7 @@ Every detailed lecture chapter should normally include:
 - **Common mistakes and misconceptions**
 - **Limitations and design trade-offs**
 - **Connections** to prior and later chapters
-- **Key English** definitions or short source wording, explained in Chinese
+- **Key terminology** definitions or short source wording, explained in the selected output language
 - **Self-check questions** or a concise recap
 
 Concept notes may be shorter, but should link to the detailed lecture section where the concept is taught.
@@ -99,8 +99,8 @@ Do not merely list bullets from slides. Convert them into connected explanatory 
 
 As a default depth target:
 
-- substantial lecture source: roughly 1,200-3,000 Chinese characters per detailed chapter, longer when derivation requires it
-- concept card: roughly 300-1,000 Chinese characters
+- substantial lecture source: roughly 1,200-3,000 Chinese characters, or an equivalent level of detail in the selected language, per chapter
+- concept card: roughly 300-1,000 Chinese characters, or an equivalent level of detail in the selected language
 - MOC: navigation and synthesis, not a replacement for chapters
 
 Every concept note should include:

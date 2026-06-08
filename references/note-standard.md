@@ -80,14 +80,16 @@ A concept card should:
 
 It may be concise because the lecture chapter supplies depth.
 
-## Bilingual pattern
+## Language and terminology pattern
 
-Preferred:
+Write explanatory prose in the user's selected language. Preserve established technical terminology in its original language on first mention.
+
+For a Chinese output, for example:
 
 ```markdown
 知识图谱嵌入（Knowledge Graph Embedding, KGE）...
 
-**Key English**
+**Original wording**
 
 > Pass every literal value as a query parameter.
 ```
@@ -95,9 +97,9 @@ Preferred:
 Avoid:
 
 - translating code identifiers
-- English paragraphs with no Chinese explanation
+- original-language paragraphs with no explanation in the selected output language
 - removing established acronyms
-- retaining every sentence merely because it is English
+- retaining every source sentence merely because it is in another language
 
 ## Linking pattern
 

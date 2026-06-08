@@ -11,13 +11,13 @@ A Codex skill that converts PDFs, slides, documents, notebooks, and other source
 生成的知识域采用三层结构：
 
 1. **Map layer**：知识地图、学习路线与 Canvas 入口
-2. **Detailed lecture layer**：教材式中文讲义，保留关键英文术语、公式、示例和推导
+2. **Detailed lecture layer**：按用户指定语言生成教材式讲义，保留关键原文术语、公式、示例和推导
 3. **Concept layer**：适合双链、检索和 Graph View 的原子概念卡
 
 处理完成后，你会得到：
 
-- 按推荐顺序组织的详细中文讲义
-- 保留专业英文术语、模型名称、API、公式与代码的双语笔记
+- 按推荐顺序和用户指定语言组织的详细讲义
+- 保留专业原文术语、模型名称、API、公式与代码的笔记
 - 可独立检索和复习的概念卡
 - 连接前置知识、相关方法、对比模型和应用场景的 `[[Wikilinks]]`
 - 可视化展示学习路径的 Obsidian Canvas
@@ -28,10 +28,10 @@ A Codex skill that converts PDFs, slides, documents, notebooks, and other source
 
 ```text
 把这些课程 slides 整理到我的 Obsidian/NLP 文件夹。
-保留关键英文术语，内容尽可能详细，并构建知识图谱。
+使用中文撰写，保留关键英文术语，内容尽可能详细，并构建知识图谱。
 ```
 
-Skill 会自行识别 Obsidian Vault、参考已有笔记风格，并在不破坏原有内容和 Graph View 设置的前提下创建或扩充对应知识域。
+用户可以指定中文、英文或其他输出语言；如果没有指定，Skill 会参考已有 Vault 的主要语言和笔记风格。它会在不破坏原有内容和 Graph View 设置的前提下创建或扩充对应知识域。
 
 ## 效果展示
 
