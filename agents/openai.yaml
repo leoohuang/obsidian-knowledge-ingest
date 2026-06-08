@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Knowledge Ingest"
+  short_description: "Turn source files into linked Obsidian knowledge maps"
+  default_prompt: "Use $obsidian-knowledge-ingest to organize this file into the specified Obsidian folder as linked notes, a Canvas map, and validated attachments."
